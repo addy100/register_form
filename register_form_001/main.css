@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+.register {
+	--color-text: #000000cc;
+    --color-bg: #5be7c9a4;
+    --color-link: #000000cc;
+    --color-link-hover: #e84613;
+    --color-info: #000000cc;
+    font-family: 'Space Mono', monospace;
+	text-transform: lowercase;
+	background-image: linear-gradient(to right bottom, rgba(235, 33, 50, 1.2),rgba(51, 163, 190, 0.911),rgba(50,160,10,198));
+}
+
+.form {
+	width: 80%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 4rem 0 0 0;
+}
+
+.form__title {
+	display: block;
+	color: #000000cc;
+	font-size: 2.8rem;
+	text-align: left;
+	font-weight: bold;
+	align-self: center ;
+	padding: 0 0 1.5rem;
+}
+
+.form__item {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 1.5rem 0;
+}
+
+.form__label {
+	display: block;
+	font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    overflow: hidden;
+	color: #000000;
+	font-size:xx-large;
+}
+
+.form__label span {
+	opacity: 40;
+}
+
+.form__label span,
+.form__placeholder span {
+	flex: none;
+	white-space: pre;
+}
+
+.form__input {
+	display: block;
+	font-size: 1.25rem;
+	padding: 1.5rem;
+	width: 100%;
+	border: 0;
+	background: #252222;
+	position: relative;
+	font-weight: bold;
+	color: #fff;
+}
+
+.form__input:focus {
+	outline: none;
+}
+
+
+.form__placeholder {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	font-size: 1.25rem;
+	pointer-events: none;
+	padding: 1.5rem;
+	display: flex;
+	overflow: hidden;
+	color: #234afc;
+	font-weight: bold;
+}
+
+.form__input:focus ~ .form__placeholder span {
+	opacity: 0;
+}
+
+.form__button {
+	padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+	border: 0;
+	background:linear-gradient(to left,rgb(230, 11, 11),rgb(25, 204, 204),rgba(18, 114, 18, 0.562));
+    margin: 1.2rem 0 0 auto;
+	border-radius: 5px;
+    color: #050507c7;
+	align-self: center;
+	text-shadow: #131313;
+	-webkit-box-reflect: bottom 1px linear-gradient(transparent,#0000);
+}
+
+.form__button:focus {
+	outline: none;
+}
+
+.form__button:hover {
+	background:radial-gradient(rgb(230, 11, 11),rgb(25, 204, 204),rgba(135, 52, 202, 0.678),rgba(24, 179, 24, 0.801));
+}
